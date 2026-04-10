@@ -3,6 +3,8 @@
  */
 function changeHeadingText() {
   // TODO: Implement this function
+  let heading=document.getElementById('main-heading');
+  heading.textContent='DOM Manipulation Challenge';
 }
 
 /**
@@ -10,6 +12,8 @@ function changeHeadingText() {
  */
 function changeBoxColor() {
   // TODO: Implement this function
+  let box=document.getElementById('box-to-modify');
+  box.style.backgroundColor='lightblue';
 }
 
 /**
@@ -17,13 +21,21 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
+  let newItem=document.createElement('li');
+  newItem.textContent='New Item';
+  let List=document.getElementById('item-list');
+  List.appendChild(newItem);
 }
+
 
 /**
  * Selects the paragraph with the class 'content-para' and adds the class 'highlight' to it.
  */
 function highlightParagraph() {
   // TODO: Implement this function
+  let para=document.querySelector('.content-para');
+  para.classList.add('highlight');
+
 }
 
 /**
@@ -31,6 +43,8 @@ function highlightParagraph() {
  */
 function removeElement() {
   // TODO: Implement this function
+  let element=document.getElementById('to-be-removed');
+  element.remove();
 }
 
 
